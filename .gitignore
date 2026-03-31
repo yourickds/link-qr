@@ -1,2 +1,4 @@
 /.idea
 .env
+# "vlucas/phpdotenv" Значения берутся из корневого .env
+!/html/.env

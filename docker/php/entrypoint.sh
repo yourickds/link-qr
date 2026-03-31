@@ -21,6 +21,12 @@ if [ -d "/var/www/html/views" ]; then
   chmod -R 775 /var/www/html/views
 fi
 
+# Для сборки assets файлов
+if [ -d "/var/www/html/web/assets" ]; then
+  chgrp -R www-data /var/www/html/web/assets
+  chmod -R 775 /var/www/html/web/assets
+fi
+
 # На всякий случай мало-ли
 echo "🔄 Waiting for MySQL at mysql:3306..."
 
